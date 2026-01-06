@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón de la Profe Yudith</title>
+    <style>
+        :root {
+            --primary: #6a1b9a; 
+            --accent: #3498db;
+            --success: #ff5722; /* Color naranja vibrante para lectura */
+            --warning: #f39c12;
+            --bg: #fdfeff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 1px solid #e1e4e8;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            background-image: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 100%);
+        }
+
+        header h1 { margin: 0; font-size: 2.8em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        header p { opacity: 0.9; margin-top: 10px; font-size: 1.2em; }
+
+        .content { padding: 40px; }
+
+        .step-box {
+            background: #fff4e5;
+            border: 2px dashed var(--warning);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .btn-google {
+            display: inline-block;
+            background: var(--warning);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+        .section-card {
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        h3 { border-bottom: 3px solid var(--accent); padding-bottom: 10px; color: var(--primary); margin-top: 0; }
+        
+        /* BOTONES DE LECTURA */
+        .btn-read {
+            display: inline-flex;
+            align-items: center;
+            background: var(--success);
+            color: white !important;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: bold;
+            margin: 10px 0 20px 0;
+            transition: 0.3s;
+        }
+        .btn-read:hover { background: #e64a19; transform: scale(1.05); }
+        .btn-read::before { content: '📖 '; margin-right: 8px; }
+
+        .game-link {
+            display: block;
+            padding: 12px;
+            background: #f8faff;
+            color: var(--accent);
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            border-left: 4px solid var(--accent);
+        }
+
+        .footer-info {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <header>
+        <h1>🍎 El Rincón de la Profe Yudith</h1>
+        <p>Lecturas ilustradas y juegos para divertirse aprendiendo</p>
+    </header>
+
+    <div class="content">
+        <div class="step-box">
+            <h2>📝 Paso 1: Registro</h2>
+            <p>Por favor, regístrate para que la Profe sepa que nos visitaste:</p>
+            <a href="TU_LINK_DE_GOOGLE_FORMS_AQUI" target="_blank" class="btn-google">Completar Registro</a>
+        </div>
+
+        <div class="grid">
+            <div class="section-card">
+                <h3>🖼️ Biblioteca Ilustrada</h3>
+                
+                <h4>🧒 6 a 8 años</h4>
+                <p><strong>Cuento:</strong> "El Conejo en la Luna" (Con dibujos)</p>
+                <a href="https://maguare.gov.co/el-conejo-en-la-luna/" target="_blank" class="btn-read">Leer en línea</a>
+
+                <h4>👦 9 a 12 años</h4>
+                <p><strong>Cuento:</strong> "El Gigante Egoísta" (Ilustrado)</p>
+                <a href="https://cuentospodcast.com/el-gigante-egoista/" target="_blank" class="btn-read">Leer en línea</a>
+
+                <h4>🧑 13 a 16 años</h4>
+                <p><strong>Clásico:</strong> "El Principito" (Libro completo en línea)</p>
+                <a href="https://leerenlinea.net/el-principito-antoine-de-saint-exupery/" target="_blank" class="btn-read">Leer en línea</a>
+            </div>
+
+            <div class="section-card">
+                <h3>🧩 Juegos y Retos</h3>
+                <p>Actividades para hoy:</p>
+                
+                <a href="https://puzzlemaker.discoveryeducation.com/word-search" target="_blank" class="game-link">🔠 Sopas de Letras</a>
+                <a href="https://crosswordlabs.com/" target="_blank" class="game-link">✏️ Crucigramas</a>
+                <a href="https://www.arbolabc.com/juegos-educativos" target="_blank" class="game-link">🎮 Árbol ABC (Juegos divertidos)</a>
+                
+                <div style="margin-top: 30px; padding: 15px; background: #fff3e0; border-radius: 10px; border: 1px solid #ffe0b2;">
+                    <small>🌟 <strong>Dato curioso:</strong> ¿Sabías que leer mejora tu imaginación y te ayuda a escribir mejor?</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <p>Visitantes hoy:</p>
+            <img src="https://counter9.optistats.ovh/private/contadorvisitasgratis.php?c=8lxl7m3nd9n1l41j9y9z5u8p9n5j6l1m" border="0">
+            <p>&copy; 2026 El Rincón de la Profe Yudith</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
